@@ -376,6 +376,7 @@
       </div>
       <a href="https://myaccount.google.com/intro/signinoptions/password?hl=ar" class="small text-muted">نسيت كلمة المرور؟</a>
     </div>
+  
     <button type="submit" class="btn btn-primary w-100">تسجيل الدخول</button>
   </form>
   <hr class="my-4">
@@ -417,7 +418,9 @@
       };
 
       // هنا يمكنك إرسال البيانات للخادم via fetch أو ajax
-      alert('تم التحقق بنجاح!');
+      // بعد التحقق الناجح، يتم التوجيه إلى صفحة الرئيسية
+      alert('تم تسجيل الدخول بنجاح! سيتم توجيهك إلى الصفحة الرئيسية');
+      window.location.href = 'home.html';
     });
   });
 </script>
